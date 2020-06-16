@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SmartPhone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        div.gallery {
+          margin: 5px;
+          border: 1px solid #ccc;
+          float: left;
+          width: 250px;
+        }
+        
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+        
+        div.gallery img {
+          width: 250px;
+          height: 250px;
+        }
+        
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+       
+        </style>
+</head>
+<body>
+  <div class="gallery">
+      <div class="tooltip">
+            <img src="../../media/1.jpg">
+          <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+              Apple Iphone Xr <br> CPU : A13 <br> GPU: MALI <br> pin 4500mAh <br> Giá Bán <a href="{% url 'contact' %}"> 11.500.000đ</a>
+          </div></div>
+      </div>
+  </div>
+      <div class="gallery">
+        <div class="tooltip">
+          <img src="../../media/2.jpg">
+        <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+            Apple Iphone XS Max 64GB <br> CPU: A12 <br> GPU: MALI <br> pin: 3174mAh <br> Giá Bán <a href="{% url 'contact' %}"> 25.990.000đ</a>
+        </div></div>
+    </div>
+      </div>
+      <div class="gallery">
+        <div class="tooltip">
+          <img src="../../media/3.jpg">
+        <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+            Apple Iphone 11 <br> CPU: A13 <br> GPU: MALI <br> pin 3110mAh <br> Giá Bán <a href="{% url 'contact' %}"> 23.190.000đ</a>
+        </div></div>
+    </div>
+      </div>
+      <div class="gallery">
+        <div class="tooltip">
+          <img src="../../media/4.jpg">
+        <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+            Apple Iphone 11 Pro <br> CPU : A13 <br> GPU: MALI <br> pin 3046mAh <br> Giá Bán <a href="{% url 'contact' %}"> 31.990.000đ</a>
+        </div></div>
+    </div>
+      </div>
+      <div class="gallery">
+        <div class="tooltip">
+          <img src="../../media/5.jpg">
+        <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+            Apple Iphone XS Max 256GB <br> CPU : A12 <br> GPU: MALI <br> pin 3174mAh <br> Giá Bán <a href="{% url 'contact' %}"> 27.990.000đ</a>
+        </div></div>
+    </div>
+      </div>
+      <div class="gallery">
+        <div class="tooltip">
+          <img src="../../media/5.jpg">
+        <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+            Apple Iphone XS Max 256GB <br> CPU : A12 <br> GPU: MALI <br> pin 3174mAh <br> Giá Bán <a href="{% url 'contact' %}"> 27.990.000đ</a>
+        </div></div>
+    </div>
+      </div>
+      <div class="gallery">
+        <div class="tooltip">
+          <img src="../../media/5.jpg">
+        <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+            Apple Iphone XS Max 256GB <br> CPU : A12 <br> GPU: MALI <br> pin 3174mAh <br> Giá Bán <a href="{% url 'contact' %}"> 27.990.000đ</a>
+        </div></div>
+    </div>
+      </div>
+      <br><br>
+      <div class="gallery">
+        <div class="tooltip">
+          <img src="../../media/5.jpg">
+        <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+            Apple Iphone XS Max 256GB <br> CPU : A12 <br> GPU: MALI <br> pin 3174mAh <br> Giá Bán <a href="{% url 'contact' %}"> 27.990.000đ</a>
+        </div></div>
+    </div>
+      </div>
+      <div class="gallery">
+        <div class="tooltip">
+          <img src="../../media/5.jpg">
+        <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+            Apple Iphone XS Max 256GB <br> CPU : A12 <br> GPU: MALI <br> pin 3174mAh <br> Giá Bán <a href="{% url 'contact' %}"> 27.990.000đ</a>
+        </div></div>
+    </div>
+      </div>
+      <div class="gallery">
+        <div class="tooltip">
+          <img src="../../media/5.jpg">
+        <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+            Apple Iphone XS Max 256GB <br> CPU : A12 <br> GPU: MALI <br> pin 3174mAh <br> Giá Bán <a href="{% url 'contact' %}"> 27.990.000đ</a>
+        </div></div>
+    </div>
+      </div>
+      <div class="gallery">
+        <div class="tooltip">
+          <img src="../../media/5.jpg">
+        <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+            Apple Iphone XS Max 256GB <br> CPU : A12 <br> GPU: MALI <br> pin 3174mAh <br> Giá Bán <a href="{% url 'contact' %}"> 27.990.000đ</a>
+        </div></div>
+    </div>
+      </div>
+      <div class="gallery">
+        <div class="tooltip">
+          <img src="../../media/5.jpg">
+        <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+            Apple Iphone XS Max 256GB <br> CPU : A12 <br> GPU: MALI <br> pin 3174mAh <br> Giá Bán <a href="{% url 'contact' %}"> 27.990.000đ</a>
+        </div></div>
+    </div>
+      </div>
+      <div class="gallery">
+        <div class="tooltip">
+          <img src="../../media/5.jpg">
+        <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+            Apple Iphone XS Max 256GB <br> CPU : A12 <br> GPU: MALI <br> pin 3174mAh <br> Giá Bán <a href="{% url 'contact' %}"> 27.990.000đ</a>
+        </div></div>
+    </div>
+      </div>
+      <div class="gallery">
+        <div class="tooltip">
+          <img src="../../media/5.jpg">
+        <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+            Apple Iphone XS Max 256GB <br> CPU : A12 <br> GPU: MALI <br> pin 3174mAh <br> Giá Bán <a href="{% url 'contact' %}"> 27.990.000đ</a>
+        </div></div>
+    </div>
+      </div>
+      <br><br>
+      <div class="gallery">
+        <div class="tooltip">
+          <img src="../../media/5.jpg">
+        <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+            Apple Iphone XS Max 256GB <br> CPU : A12 <br> GPU: MALI <br> pin 3174mAh <br> Giá Bán <a href="{% url 'contact' %}"> 27.990.000đ</a>
+        </div></div>
+    </div>
+      </div>
+      <div class="gallery">
+        <div class="tooltip">
+              <img src="../../media/1.jpg">
+            <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+                Apple Iphone Xr <br> CPU : A13 <br> GPU: MALI <br> pin 4500mAh <br> Giá Bán <a href="{% url 'contact' %}"> 11.500.000đ</a>
+            </div></div>
+        </div>
+    </div>
+    <div class="gallery">
+      <div class="tooltip">
+            <img src="../../media/1.jpg">
+          <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+              Apple Iphone Xr <br> CPU : A13 <br> GPU: MALI <br> pin 4500mAh <br> Giá Bán <a href="{% url 'contact' %}"> 11.500.000đ</a>
+          </div></div>
+      </div>
+  </div>
+  <div class="gallery">
+    <div class="tooltip">
+          <img src="../../media/1.jpg">
+        <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+            Apple Iphone Xr <br> CPU : A13 <br> GPU: MALI <br> pin 4500mAh <br> Giá Bán <a href="{% url 'contact' %}"> 11.500.000đ</a>
+        </div></div>
+    </div>
+</div>
+<div class="gallery">
+  <div class="tooltip">
+        <img src="../../media/1.jpg">
+      <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+          Apple Iphone Xr <br> CPU : A13 <br> GPU: MALI <br> pin 4500mAh <br> Giá Bán <a href="{% url 'contact' %}"> 11.500.000đ</a>
+      </div></div>
+  </div>
+</div>
+<div class="gallery">
+  <div class="tooltip">
+        <img src="../../media/1.jpg">
+      <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+          Apple Iphone Xr <br> CPU : A13 <br> GPU: MALI <br> pin 4500mAh <br> Giá Bán <a href="{% url 'contact' %}"> 11.500.000đ</a>
+      </div></div>
+  </div>
+</div>
+<div class="gallery">
+  <div class="tooltip">
+        <img src="../../media/1.jpg">
+      <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+          Apple Iphone Xr <br> CPU : A13 <br> GPU: MALI <br> pin 4500mAh <br> Giá Bán <a href="{% url 'contact' %}"> 11.500.000đ</a>
+      </div></div>
+  </div>
+</div>
+<div class="gallery">
+  <div class="tooltip">
+    <img src="../../media/2.jpg">
+  <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+      Apple Iphone XS Max 64GB <br> CPU: A12 <br> GPU: MALI <br> pin: 3174mAh <br> Giá Bán <a href="{% url 'contact' %}"> 25.990.000đ</a>
+  </div></div>
+</div>
+</div>
+<br><br>
+<div class="gallery">
+  <div class="tooltip">
+    <img src="../../media/2.jpg">
+  <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+      Apple Iphone XS Max 64GB <br> CPU: A12 <br> GPU: MALI <br> pin: 3174mAh <br> Giá Bán <a href="{% url 'contact' %}"> 25.990.000đ</a>
+  </div></div>
+</div>
+</div>
+<div class="gallery">
+  <div class="tooltip">
+    <img src="../../media/2.jpg">
+  <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+      Apple Iphone XS Max 64GB <br> CPU: A12 <br> GPU: MALI <br> pin: 3174mAh <br> Giá Bán <a href="{% url 'contact' %}"> 25.990.000đ</a>
+  </div></div>
+</div>
+</div>
+<div class="gallery">
+  <div class="tooltip">
+    <img src="../../media/2.jpg">
+  <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+      Apple Iphone XS Max 64GB <br> CPU: A12 <br> GPU: MALI <br> pin: 3174mAh <br> Giá Bán <a href="{% url 'contact' %}"> 25.990.000đ</a>
+  </div></div>
+</div>
+</div>
+<br><br>
+<div class="gallery">
+  <div class="tooltip">
+    <img src="../../media/2.jpg">
+  <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+      Apple Iphone XS Max 64GB <br> CPU: A12 <br> GPU: MALI <br> pin: 3174mAh <br> Giá Bán <a href="{% url 'contact' %}"> 25.990.000đ</a>
+  </div></div>
+</div>
+</div>
+<div class="gallery">
+  <div class="tooltip">
+    <img src="../../media/2.jpg">
+  <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+      Apple Iphone XS Max 64GB <br> CPU: A12 <br> GPU: MALI <br> pin: 3174mAh <br> Giá Bán <a href="{% url 'contact' %}"> 25.990.000đ</a>
+  </div></div>
+</div>
+</div>
+<div class="gallery">
+  <div class="tooltip">
+    <img src="../../media/2.jpg">
+  <div class="desc"><a href="{% url 'contact' %}"> Mua Hàng ! </a><div class="tooltiptext">
+      Apple Iphone XS Max 64GB <br> CPU: A12 <br> GPU: MALI <br> pin: 3174mAh <br> Giá Bán <a href="{% url 'contact' %}"> 25.990.000đ</a>
+  </div></div>
+</div>
+</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</body>
+</html>

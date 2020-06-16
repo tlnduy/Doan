@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đăng nhập</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    *{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    }
+    header{
+    background-color: #7bed9f;
+    min-height: 70px;
+    padding: 15px;
+    }
+    main{
+    background-color: #7bed9f;
+    min-height: 300px;
+    padding: 7.5px 15px;
+    }
+    footer{
+    background-color: #7bed9f;
+    min-height: 70px;
+    padding: 15px;
+    }
+    .container{
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .login-form{
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #7bed9f;
+    padding: 15px;
+    border: 2px dotted #7bed9f;
+    border-radius: 10px;
+    }
+    h1{
+    color: #3742fa;
+    font-size: 20px;
+    margin-bottom: 30px;
+    }
+    .input-box{
+    margin-bottom: 10px;
+    }
+    .input-box input{
+    padding: 7.5px 15px;
+    width: 100%;
+    border: 1px solid #7bed9f;
+    outline: none;
+    }
+    .btn-box{
+    text-align: right;
+    margin-top: 30px;
+    }
+    .btn-box button{
+    padding: 7.5px 15px;
+    border-radius: 2px;
+    background-color: #7bed9f;
+    color: #3742fa;
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+    <main>
+        <div class="container">
+            <form method="POST">
+            <div class="login-form">
+                    {% csrf_token %}
+                    {% for key,value in form.errors.items %}
+                        {{value}}
+                    {% endfor %}
+                    <center><h1>Login Wesite</h1></center>
+                    <div class="input-box">
+                        <i ></i>
+                        <label>Username{{form.username}}</label>
+                    </div>
+                    <div class="input-box">
+                        <i ></i>
+                        <label>Password{{form.password}}</label>
+                    </div>
+                    <div class="btn-box">
+                        <center><button><input type="hidden" name='next' value="/"/>
+                            Đăng nhập
+                        </button></center>
+                       
+                        <center>
+                            <a href="{% url 'register'%}">Chưa có tài khoản</a>
+                        </center>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </main>
+    </header>
+</body>
+</html>
